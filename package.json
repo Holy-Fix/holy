@@ -1,0 +1,22 @@
+{
+  "name": "holy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holy-Fix/holy.git"
+  },
+  "author": "Holy Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holy-Fix/holy/issues"
+  },
+  "homepage": "https://github.com/Holy-Fix/holy#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
