@@ -6,8 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">  
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,21 +22,23 @@
     <body>
 
       <!--Comienza Navbar-->
-        <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
-           <a class="navbar-brand" href="#">
-               <img src="assets/images/LOGOBNSL.png" alt="Logo" width="100">
-               <p><small id="sublogo">¡A punto para reparar!</small></p>
-           </a>
+      <div class="navbar navbar-dark ">       
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/LOGOBNSL.png" alt="Logo" width="100">
+              <p><small id="sublogo">¡A punto para reparar!</small></p>
+            </a>
+      </div>
+        <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="Navbar">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link active" href="">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
             </ul>
           </div>
         </nav>
@@ -39,6 +46,7 @@
         <!--Termina Navbar-->
 
         <!--Comienza Jumbotron-->
+        <div class="fondo">
         <div class="jumbotron">
             <div class="container">
               <div class="row row-header">
@@ -46,17 +54,20 @@
                   <h1 id="titleholy">Holy Fix</h1>
                   <p id="textojumbo">Hazlo bonito, hazlo funcional y ¡Hazlo rapido!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center butye">
+                <div class="col-12 col-sm-6 align-self-center butye" id="btnideac">
                   <a href="#"><button class="btn btn-block" id="btnidea">Hagamos tu idea real</button></a>
               </div>
               </div>
             </div>
+            <hr>
         </div>
+        
         <!--termina Jumbotron-->
-
-
+        
+        
         <!--comienzan Cards-->
         <div class="container">
+          
           <!--comienza card deck de 3 cards-->
           <div class="card-deck">
 
@@ -116,7 +127,7 @@
 
           </div>
           <!--termina card deck de 3 cards-->
-
+       
           <!--comienza card deck de 3 cards-->
           <div class="card-deck">
 
@@ -176,9 +187,10 @@
 
           </div>
           <!--termina card deck de 3 cards-->
+          
         </div>
         <!--Terminan cards-->
-        
+      
         <!--Comienza Jumbotron de tecnologias que conocemos-->
         <div class="jumbotron">
           <div class="container">
@@ -192,13 +204,12 @@
           </div>
         </div>
         <!--Termina Jumbotron de clientes-->
-
+        
         <!-- inicia Jumbo de ultimatum-->
         <div class="jumbotron">
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-3">
-                <img src="assets/images/LOGOBN.png" alt="Holy Fix" height="150">
               </div>
               <div class="col-12 col-sm-6">
                 <div class="row justify-content-md-center">
@@ -215,15 +226,49 @@
             </div>
           </div>
         </div>
- 
+      
         <!-- termina Jumbo de ultimatum-->
 
         <!--Comienza footer-->
-        <footer class="footer">
-          <div class="container">
-            <div class="row"></div>
-          </div>
+        <footer  class="footer sticky-bottom d-none d-lg-block" id="foot">
+              <div class="row" >
+                  <div class="col-12 col-sm-3">
+                    <img src="assets/images/LOGOBNBLANCO.png" alt="Logo" width="250" height="150" id="logojum">
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <p><h1 class="display-6" id="divif">Nuestras redes sociales</h1></p>
+                    <div class="main1 center1">
+                      <div class="red">
+                        <i class="fa fa-instagram fa-2x"><a href=""></a></i>
+                      </div>
+                      <div class="red">
+                        <i class="fa fa-facebook-square fa-2x"><a href=""></a></i>
+                      </div>
+                      <div class="red">
+                        <i class="fa fa-whatsapp fa-2x"><a href=""></a></i>
+                      </div>
+                      <div class="red">
+                        <i class="fa fa-twitter fa-2x"><a href=""></a></i>
+                      </div>
+                      <div class="red">
+                        <i class="fa fa-linkedin fa-2x"><a href=""></a></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3">
+                  <div>
+                    <p><h1>Contactanos</h1></p>
+                    <p><i class="fa fa-phone"></i> Poner telefono</p>
+                    <p><h3>Mandanos un mail <i class="fa fa-smile"></i></h3></p>
+                    <p><i class="fa fa-envelope"></i> Poner correo</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="row justify-content-md-center">
+                <small>Derechos reservados 2021 | Holy Fix</small>
+            </div>
         </footer>
+      </div>
         <!--termina footer-->
     </body>
 </html>

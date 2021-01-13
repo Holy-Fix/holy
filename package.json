@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Holy-Fix/holy#readme",
   "dependencies": {
-    "bootstrap": "^4.5.3"
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0"
   }
 }

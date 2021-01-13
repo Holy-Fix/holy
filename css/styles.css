@@ -1,16 +1,42 @@
 /*Selectores de Etiquietas*/
 a{
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr{
+    border: 1px solid gray !important;
 }
 /*Selectores de clase*/
+.fondo{
+    background: #ebf4f5f1 !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .navbar-brand{
+    margin-left: 41.5% ;
+    margin-right: 50%;
+    text-align: center;
     padding-right: 1cm;
-    padding-left: 0.5cm;
+    padding-left: 1cm;
+}
+
+.navbar-dark{
+    background: rgb(5,52,103);
+    background: linear-gradient(221deg, rgba(5,52,103,1) 0%, rgba(1,44,64,1) 46%, rgba(0,22,55,1) 100%);
+}
+
+.jumbotron {
+    background: #ebf4f5f1 !important;
+    color: black;
 }
 
 .card-deck{
     padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .card-header{
@@ -57,6 +83,62 @@ a{
     margin: 20px;
     overflow: hidden;
 }
+.center1{
+    display: flex;
+}
+.main1{
+    width: 100%;
+
+}
+.red{
+    padding-top: 4px;
+    padding-bottom: 0px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background: #c32aa3;
+    color: floralwhite;   
+    margin: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .4s;
+    
+}
+
+.red:hover{
+    box-shadow: 0px 8px #cc15a494, 0px 16px #c32aa2ad,0px 24px #c32aa262;
+}
+.red:nth-child(2){
+    background: #1877f2;
+}
+.red:hover:nth-child(2){
+    box-shadow: 0px 8px #1876f2bb, 0px 16px #1876f277,0px 24px #1da0f22f;
+}
+.red:nth-child(3){
+    background: #25d366;
+}
+.red:hover:nth-child(3){
+    box-shadow: 0px 8px #25d365a9, 0px 16px #25d36557, 0px 24px #25d36528;
+}
+.red:nth-child(4){
+    background: #1da1f2;
+}
+.red:hover:nth-child(4){
+    box-shadow: 0px 8px #1da0f2a6, 0px 16px #1da0f256, 0px 24px #1da0f22f;
+}
+.red:nth-child(5){
+    background: #00008b;
+}
+.red:hover:nth-child(5){
+    box-shadow: 0px 8px #00008ba2, 0px 16px #00008b69, 0px 24px #00008b42;
+}
+
+
+.footer{
+    position: sticky;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
 
 /*ID's*/
 
@@ -64,18 +146,21 @@ a{
     font-size: 12px;
     font-weight: bolder;
     font-style: italic;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #titleholy{
+    font-family: 'Poppins', sans-serif;
     position: relative;
     font-size: 100px;
     font-weight: 600;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: rgb(37, 102, 155);
-    -webkit-text-stroke: 3px rgb(37, 102, 155);
-    text-shadow:0px 0px rgb(54, 156, 240);
+    color: rgb(23, 58, 87);
+    -webkit-text-stroke: 3px rgb(23, 58, 87);
+    text-shadow:0px 0px rgb(13, 40, 61);
     transition: all, .4s;
     padding-bottom: 1cm;
 }
@@ -124,6 +209,10 @@ a{
     clip-path: circle(100% at 50% 100%);
 }
 
+#btnideac{
+    padding-top: 25px;
+}
+
 #btnfin{
     width: 250px;
     height: 70px;
@@ -140,8 +229,13 @@ a{
     color: #fff;
     background: rgb(18, 79, 170);
 }
-
+#foot{
+    background-color: rgb(3, 42, 83);
+    padding-top: 20px;
+    padding-bottom: 0px;
+    height: 250px;
+    color: floralwhite;
+}
 /*Selectores Mixtos*/
-
 
 /*Selectores Hijo*/
